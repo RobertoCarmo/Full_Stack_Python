@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Al clickear el boton agregue un h3 dinamicamente -->
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('div').append('<h3>Tag generado dinámicamente</h3>');
+            });
+
+            $('h3').click(function(){
+                alert('Buenas tardes!!');
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <div>
+        <button>Click para agregar un nuevo tag H3</button>
+        <h3>Clickear para ver un mensaje</h3>
+    </div>  
+</body>
+</html>

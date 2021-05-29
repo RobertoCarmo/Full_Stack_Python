@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+
+        function mostrarMensaje(){
+            $('.alert').click(function(){
+                alert("Me han clickeado!!");
+            });
+        }
+
+        $(document).ready(function(){
+            
+            mostrarMensaje();
+
+            $('.nuevo_btn').click(function(){
+                $('#buttons').append("<button class='alert'>Soy un botón generado dinámicamente!</button>");
+                mostrarMensaje();
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <h3>Contenido dinámico</h3>
+    <div>
+        <button class='alert'>Apretame para lanzar un mensaje! </button>
+        <button class='alert'>Apretame para lanzar un mensaje! </button>
+        <button class='alert'>Apretame para lanzar un mensaje! </button>
+        <button class='nuevo_btn'>Apretame para agregar un boton! </button>
+    </div>
+    <h3>Contenido generado dinámicamente</h3>
+    <div id="buttons"></div>
+</body>
+
+</html>

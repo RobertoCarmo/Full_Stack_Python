@@ -1,0 +1,64 @@
+.top{
+    background-color: #7c7979;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-top: 13px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.medio{
+    background-color: rgb(168, 166, 166);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 120px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.tamaño{
+    background-color: #fdec55;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 1023px) {
+    /* Add a pseudo element with the 
+       text from attribute 'data-abbr' */
+            .tamaño[data-abbr]::after { 
+                content: attr(data-abbr); 
+            }
+            
+            /* Hide the original label */
+            .tamaño > .tablet { display: none; }
+            .tamaño > .fono {display: none;}
+        }
+
+@media screen and (min-width: 481px) and (max-width: 1023px){
+            /* Add a pseudo element with the 
+               text from attribute 'data-abbr' */
+                    .tablet[data-abbr]::after { 
+                        content: attr(data-abbr); 
+                    }
+                    
+                    /* Hide the original label */
+                    .tamaño > .tamaño{ display: none; }
+                    .tamaño > .fono {display: none;}
+                }
+
+@media screen and (max-width: 480px){
+    /* Add a pseudo element with the 
+    text from attribute 'data-abbr' */
+            .fono[data-abbr]::after { 
+                content: attr(data-abbr); 
+                            }
+         /* Hide the original label */
+                    .tamaño > .tamaño{ display: none; }
+                    .tamaño > .tablet {display: none;}
+                        }

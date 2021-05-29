@@ -1,0 +1,29 @@
+*{
+    /* outline: 1px solid red; */
+}
+
+.container{
+    width: 700px;
+    height: 650px;
+    background-color: #d5dd8d;
+}
+
+.header{
+    background-color: #d5dd8d;
+    width: 615px;
+    padding-top: 20px;
+    padding-left: 85px;
+}
+.header img{
+    width: 120px;
+    height: 70px;
+    background-color: white;
+}
+
+.header a{
+    text-align: center;
+    width: 250px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}

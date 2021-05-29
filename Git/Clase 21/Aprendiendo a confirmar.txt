@@ -1,0 +1,208 @@
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22 (master)
+$ mkdir test
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22 (master)
+$ cd test
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ touch index.html
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ touch style.css
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git init
+Initialized empty Git repository in C:/Users/Usuario1/Desktop/Proyecto HMTL/Clase_22/test/.git/
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git add index.html
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git add style.css
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git commit -m "Se agrega titulo a index.html y background color a style.css"
+[master (root-commit) 3c669d6] Se agrega titulo a index.html y background color a style.css
+ 2 files changed, 15 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git log
+commit 3c669d621a93d5a754ce86a9845e6791135724e5 (HEAD -> master)
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:16:45 2021 -0300
+
+    Se agrega titulo a index.html y background color a style.css
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git add index.hmtl
+fatal: pathspec 'index.hmtl' did not match any files
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git add index.html
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git commit -m "actualizacion de HTML"
+[master 96795a7] actualizacion de HTML
+ 1 file changed, 1 insertion(+)
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git log
+commit 96795a72fff4a75011ab39bfa75ca5405787ea3e (HEAD -> master)
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:20:27 2021 -0300
+
+    actualizacion de HTML
+
+commit 3c669d621a93d5a754ce86a9845e6791135724e5
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:16:45 2021 -0300
+
+    Se agrega titulo a index.html y background color a style.css
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git add style.css
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   style.css
+
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git commit -m "actualizacion de css"
+[master 09a8720] actualizacion de css
+ 1 file changed, 3 insertions(+)
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git log
+commit 09a872057f922dfe7ae195adef41b240e1b782af (HEAD -> master)
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:22:21 2021 -0300
+
+    actualizacion de css
+
+commit 96795a72fff4a75011ab39bfa75ca5405787ea3e
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:20:27 2021 -0300
+
+    actualizacion de HTML
+
+commit 3c669d621a93d5a754ce86a9845e6791135724e5
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:16:45 2021 -0300
+
+    Se agrega titulo a index.html y background color a style.css
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git revert -n ^C
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git revert -n 09a8720
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master|REVERTING)
+$ git add style.css
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master|REVERTING)
+$ git status
+On branch master
+You are currently reverting commit 09a8720.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   style.css
+
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master|REVERTING)
+$ git commit -m "Reversado y modificado, cambio de fuente en css"
+[master 2335fcd] Reversado y modificado, cambio de fuente en css
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$ git log
+commit 2335fcdb245b83cb92cc56851af3d2466c9a5dab (HEAD -> master)
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:29:06 2021 -0300
+
+    Reversado y modificado, cambio de fuente en css
+
+commit 09a872057f922dfe7ae195adef41b240e1b782af
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:22:21 2021 -0300
+
+    actualizacion de css
+
+commit 96795a72fff4a75011ab39bfa75ca5405787ea3e
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:20:27 2021 -0300
+
+    actualizacion de HTML
+
+commit 3c669d621a93d5a754ce86a9845e6791135724e5
+Author: RobertoCarmo <rcarmonaastorga@gmail.com>
+Date:   Thu May 27 22:16:45 2021 -0300
+
+    Se agrega titulo a index.html y background color a style.css
+
+Usuario1@LAPTOP-I105NE5K MINGW64 ~/Desktop/Proyecto HMTL/Clase_22/test (master)
+$

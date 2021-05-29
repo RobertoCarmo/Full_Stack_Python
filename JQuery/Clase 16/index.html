@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Document</title>
+
+    <script>
+        $(document).ready(function() {
+            $('p').hide();
+            $("p").css("background-color");
+            $('p, h1, img').fadeOut();
+            $('h2').click(function(){
+                $('p, img').show();
+                $('h1').fadeIn('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Coding Dojo</h1>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <h2>Web Fundamentals</h2>
+    <p>paragraph 3</p>
+    <p class='special'>paragraph 4</p>
+    <h2>Python Track</h2>
+    <img class='special' src='cosmo.jpg'width="500px" height="300px">
+    <button id='btn_special'>Special</button>
+</body>
+</html>

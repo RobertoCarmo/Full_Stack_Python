@@ -1,0 +1,44 @@
+
+.barra{
+    background-color: #0f1c69;
+    overflow: hidden;
+}
+
+.barra a{
+    padding:15px;
+    text-align: center;
+    color: white;
+    float: left;
+    text-decoration: none;
+}
+
+.barra a:hover{
+    background-color: #8798fc;
+    color: black;
+}
+
+.columna{
+    float: left;
+    padding:25px;
+    width: 25%;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .columna{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    .columna{
+        width: 100%;
+    }
+    .barra a{
+        float: none;
+        width: 100%;
+
+    }
+}
+

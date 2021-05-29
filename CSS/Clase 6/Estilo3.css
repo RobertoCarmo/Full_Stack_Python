@@ -1,0 +1,22 @@
+.texto {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.imagen {
+    margin:5px;
+    border: 2px solid rgb(22, 52, 109);
+    width: 300px;
+    float: left;
+}
+
+.imagen:hover {
+    border: 2px solid rgb(145, 138, 138)
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}

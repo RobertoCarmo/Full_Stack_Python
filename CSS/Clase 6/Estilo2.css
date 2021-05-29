@@ -1,0 +1,26 @@
+
+.caja {
+    width: 200px;
+    height: 150px;
+    padding: 100px;
+    margin: 20px 100px 100px 20px;
+    background-color:teal;
+    border: 20px solid #3a3939;
+}
+
+p {
+    width: auto;
+    height: auto;
+}
+
+.p1{
+    border-style: dotted;
+}
+
+.p2{
+    border-style: groove;
+}
+
+.p3{
+    border-style: dashed;
+}

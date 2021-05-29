@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Incluyendo código JavaScript -->
+
+    <script>
+        /* Definiendo las variables  
+           Afecta varias líneas
+        
+        */
+        // Comentario afecta una sola linea
+        var x = 10;
+        var y = 35;
+        // Se necesita realizar la suma de las variables
+        var suma = x + y;
+        // Escribir en pantalla el resultado
+        document.write('<br> La suma es: ' + suma);
+
+        //Agregando condiciones en Javascript
+        // Si el if es verdadero, entonces se ejecuta todo lo que está dentro del if
+        // 1-15 niño,  15-18 adolescente, 18-29 joven, 30-50 adulto joven, 50-... adulto mayor
+        /*
+        if(y>18){
+        
+            document.write("<br> Usted es mayor de edad!!");
+        }
+        else{
+            document.write("<br> Usted es menor de edad!!");
+        }
+        */
+
+        // Condiciones anidadas
+        if (y < 15) {
+            document.write("<br> Usted es niño!!");
+        }
+        else if (y >= 15 && y < 18) {
+            document.write("<br> Usted es un adolescente!!");
+        }
+        else if (y >= 18 && y <= 29) {
+            document.write("<br> Usted es un joven!!");
+        }
+        else if (y > 29 && y <= 50) {
+            document.write("<br> Usted es un adulto joven!!");
+        }
+        else {
+            document.write("<br> Usted es un adulto mayor!!");
+        }
+
+        //Ciclos en Javascript
+        //Ciclo for
+        var nueva = 0;
+        //Primera iteración nueva vale 1, i vale 1
+        //Segunda Iteración nueva=1 e i=2; 
+        //Tercera Iteración nueva=3 e i=3; 
+        for (i = 1; i <= 100; i = i + 1) {
+            //Contenido del ciclo
+            //document.write("Número: "+i+"<br>");
+            nueva = nueva + i;
+        }
+        document.write("La suma total es: " + nueva);
+
+        // Ciclo While
+        document.write("<br><br><br><br>");
+
+        var j = 1;
+
+        while (j < 500) {
+            // contenido del ciclo
+            document.write("<br>El número par es: " + (2 * j));
+            j = j + 1;
+            //j++;
+        }
+
+        //definiendo una función 
+        function mifuncion(num1, num2){
+            var suma = num1 + num2;
+            document.write("<br><br>La suma es: "+suma);
+        }
+
+        mifuncion(10, 20);
+
+        //Listas en Javascript (Arreglo)
+        //Arreglo es un lista de elementos del mismo tipo de dato
+        //El tipo de dato puede ser: 1.Numérico 2.Literal o caracteres 3.Booleano (true - false)
+
+        //¿Cómo definir un arreglo en Javascript
+        var nombres = ["Pedro","Juan","Diego"];
+        //document.write("<br><br>"+nombres[0]);
+        //document.write("<br><br>"+nombres[1]);
+        //document.write("<br><br>"+nombres[2]);
+        nombres[1]="Juana";
+
+        for(k=0; k<3; k=k+1)
+        {
+            document.write("<br><br>"+nombres[k]);
+        }
+
+        //Removiendo un item al final del arreglo (pop())
+        nombres.pop();
+        document.write("<br><br>Eliminando elemento en el arreglo<br>");
+        for(k=0; k<2; k=k+1)
+        {
+            document.write("<br><br>"+nombres[k]);
+        }
+
+
+        //Agregando elementos al arreglo "nombres"
+        //Para esto utilizamos la función push()
+        nombres.push('Carolina');
+        document.write("<br><br>Agregando un elemento al arreglo");
+        for(k=0; k<nombres.length; k=k+1)
+        {
+            document.write("<br>"+nombres[k]);
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+</head>
+<body>
+    <h1>Mi formulario de registro</h1>
+    <br>
+    <hr>
+    <!--Definiendo un tabla-->
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </td>
+            </tr>
+                <td>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="Apellido">
+                </td>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </td>
+            </tr>    
+            <tr>
+                <td>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="pass">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Confirmar:</label>
+                    <input type="password" id="password" name="pass">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="datetime">Cumpleaños:</label>
+                    <input type="datetime" id="fecha" name="fecha">
+                </td>
+            </tr>
+        </tbody>   
+    </table>
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="femenino">Femenino</label>
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    <label for="otro">Otro</label>
+    <input type="radio" id="otro" name="genero" value="otro">
+    <br>
+    <br>
+    <h5>Una breve descripción de ti:</h5>
+    <textarea name="description"></textarea>
+    <br><br>
+ 
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="lenguaje favorito">Lenguaje Favorito:</label>
+                    <select name="Lenguaje Favorito">
+                    <option value="javascript">javascript</option>
+                    <option value="python">Python</option>
+                    <option value="otro">Otro</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>    
+    <input type="submit" value="Enviar">
+

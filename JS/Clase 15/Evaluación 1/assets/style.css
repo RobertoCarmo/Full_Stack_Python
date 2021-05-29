@@ -1,0 +1,33 @@
+
+.container-fluid{
+    background-color: rgb(179, 175, 175);
+}
+.text{
+    background-color:#487a57;
+    width:auto;
+
+} 
+
+body {
+    background-color:#b3b1b1;
+}
+
+.metodo{
+    background: url('fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-color: #487a57;
+}
+h6{
+    color: #5e8039;
+}
+.container-proyecto{
+    background-color: #5e8039;
+}
+.verde{
+    color: #5e8039;
+}
+.container-blog{
+    background-color: #cfcfcf;
+}
